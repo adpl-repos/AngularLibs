@@ -3,4 +3,3 @@
  */
 
 export * from './lib/ionic-network-reachability.service';
-export * from './lib/ionic-network-reachability.component';
