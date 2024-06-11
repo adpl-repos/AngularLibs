@@ -1,6 +1,6 @@
 {
   "name": "ionic-network-reachability",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^17.3.0",
     "@angular/core": "^17.3.0"
@@ -8,5 +8,25 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kbala-ami/MyWorkspace.git"
+        
+    },
+    "keywords": [
+        "ionic",
+        "internet",
+        "reachability",
+        "offline",
+        "online",
+        "typescript",
+        "angular"
+    ],
+    "author": "kbala@adaptivemedia.in",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kbala-ami/MyWorkspace/issues"
+    },
+    "homepage": "https://github.com/kbala-ami/MyWorkspace/blob/main/projects/ionic-network-reachability/README.md"
 }
