@@ -1,6 +1,6 @@
 {
   "name": "angular-libs",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "pub": "ng build ionic-network-reachability && cd dist/ionic-network-reachability && npm publish"
+    "pub-inr": "ng build && cd dist/ionic-network-reachability && npm publish"
   },
   "private": true,
   "workspaces": [
