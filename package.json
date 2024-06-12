@@ -1,13 +1,14 @@
 {
   "name": "my-workspace",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "pub": "npm version patch --force && ng build ionic-network-reachability && cd dist/ionic-network-reachability && npm publish"
   },
   "private": true,
   "dependencies": {
