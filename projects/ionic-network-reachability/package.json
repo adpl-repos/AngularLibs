@@ -11,7 +11,7 @@
   "sideEffects": false,
   "repository": {
         "type": "git",
-        "url": "git+https://github.com/kbala-ami/MyWorkspace.git"
+        "url": "git+https://github.com/kbala-ami/AngularLibs.git"
         
     },
     "keywords": [
@@ -26,7 +26,7 @@
     "author": "kbala@adaptivemedia.in",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/kbala-ami/MyWorkspace/issues"
+        "url": "https://github.com/kbala-ami/AngularLibs/issues"
     },
-    "homepage": "https://github.com/kbala-ami/MyWorkspace/blob/main/projects/ionic-network-reachability/README.md"
+    "homepage": "https://github.com/kbala-ami/AngularLibs/blob/main/projects/ionic-network-reachability/README.md"
 }

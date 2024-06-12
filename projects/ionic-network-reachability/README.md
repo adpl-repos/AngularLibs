@@ -1,24 +1,43 @@
-# IonicNetworkReachability
+# Ionic Network Reachability
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+Ionic Network Reachability, it is used for `testing` network connection.
 
-## Code scaffolding
+### Ionic Network Reachability
 
-Run `ng generate component component-name --project ionic-network-reachability` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ionic-network-reachability`.
-> Note: Don't forget to add `--project ionic-network-reachability` or else it will be added to the default project in your `angular.json` file. 
+```bash
+npm install ionic-network-reachability --save
+```
 
-## Build
+# Usage
 
-Run `ng build ionic-network-reachability` to build the project. The build artifacts will be stored in the `dist/` directory.
+app.component.ts
 
-## Publishing
+```ts
+import { IonicNetworkReachability } from 'ionic-network-reachability';
 
-After building your library with `ng build ionic-network-reachability`, go to the dist folder `cd dist/ionic-network-reachability` and run `npm publish`.
+export class AppComponent {
 
-## Running unit tests
+    constructor(private reachability: IonicNetworkReachability) {}
 
-Run `ng test ionic-network-reachability` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    async checkOnline() {
+        try {
+            const isOnline = await this.reachability.isReachable('url is optional');
+            return isOnline;
+        } catch(err) {
+            
+        }
+    }
 
-## Further help
+    monitoringOnlineEvents(url: string) {
+        this.reachability.onConnect('url is optional').subscribe((value: boolean) => {
+            console.log('online :)');
+        });
+    }
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    monitoringOfflineEvents() {
+        this.reachability.onDisconnect().subscribe(() => {
+            console.log('offline :(')
+        });
+    }
+}
+```
