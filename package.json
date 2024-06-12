@@ -1,16 +1,21 @@
 {
-  "name": "my-workspace",
-  "version": "0.0.9",
+  "name": "angular-libs",
+  "version": "0.0.15",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "prebuild": "npm --no-git-tag-version version patch --ws",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "pub": "npm version patch --force && ng build ionic-network-reachability && cd dist/ionic-network-reachability && npm publish"
+    "pub": "ng build ionic-network-reachability && cd dist/ionic-network-reachability && npm publish"
   },
   "private": true,
+  "workspaces": [
+    "/",
+    "projects/ionic-network-reachability"
+  ],
   "dependencies": {
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
