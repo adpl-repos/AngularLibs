@@ -15,12 +15,16 @@ export class IonicNetworkReachabilityService {
    * @returns return Promise<boolean> `true` or `false`, indicating network state
    */
   public async isReachable(url: string = 'https://httpbin.org/') {
+    try {
       const result = await fetch(url);
       if (result.ok) {
         return true;
       } else {
         return false;
       }
+    } catch (error) {
+      return false;
+    }
   }
 
   /**

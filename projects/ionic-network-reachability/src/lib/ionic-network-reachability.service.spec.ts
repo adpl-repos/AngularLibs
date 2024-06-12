@@ -10,7 +10,7 @@ describe('IonicNetworkReachabilityService', () => {
     service = TestBed.inject(IonicNetworkReachabilityService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it('should be created', async () => {
+    expect(await service.isReachable()).toBeTrue();
   });
 });
