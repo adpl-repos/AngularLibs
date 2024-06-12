@@ -1,6 +1,6 @@
 {
   "name": "angular-libs",
-  "version": "0.0.16",
+  "version": "0.0.21",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,12 +9,12 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "pub-inr": "ng build && cd dist/ionic-network-reachability && npm publish"
+    "pub-ar": "ng build && cd dist/angular-reachability && npm publish"
   },
   "private": true,
   "workspaces": [
     "/",
-    "projects/ionic-network-reachability"
+    "projects/angular-reachability"
   ],
   "dependencies": {
     "@angular/animations": "^17.3.0",

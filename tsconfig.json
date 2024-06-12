@@ -7,8 +7,8 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "ionic-network-reachability": [
-        "./dist/ionic-network-reachability"
+      "angular-reachability": [
+        "./dist/angular-reachability"
       ]
     },
     "noImplicitReturns": true,
@@ -35,4 +35,5 @@
     "strictTemplates": true
   }
 }
+
 

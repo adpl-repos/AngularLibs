@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ionic-network-reachability": {
+    "angular-reachability": {
       "projectType": "library",
-      "root": "projects/ionic-network-reachability",
-      "sourceRoot": "projects/ionic-network-reachability/src",
+      "root": "projects/angular-reachability",
+      "sourceRoot": "projects/angular-reachability/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ionic-network-reachability/ng-package.json"
+            "project": "projects/angular-reachability/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ionic-network-reachability/tsconfig.lib.prod.json"
+              "tsConfig": "projects/angular-reachability/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ionic-network-reachability/tsconfig.lib.json"
+              "tsConfig": "projects/angular-reachability/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,7 +27,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/ionic-network-reachability/tsconfig.spec.json",
+            "tsConfig": "projects/angular-reachability/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -38,8 +38,8 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/ionic-network-reachability/**/*.ts",
-              "projects/ionic-network-reachability/**/*.html"
+              "projects/angular-reachability/**/*.ts",
+              "projects/angular-reachability/**/*.html"
             ]
           }
         }

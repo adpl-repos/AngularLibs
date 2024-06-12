@@ -5,7 +5,7 @@ import { catchError, map, switchMap } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class IonicNetworkReachabilityService {
+export class AngularReachabilityService {
 
   // constructor() { }
 

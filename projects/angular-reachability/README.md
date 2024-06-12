@@ -5,7 +5,7 @@ Ionic Network Reachability, it is used for `testing` network connection.
 ### Ionic Network Reachability
 
 ```bash
-npm install ionic-network-reachability --save
+npm install angular-reachability --save
 ```
 
 # Usage
@@ -13,7 +13,7 @@ npm install ionic-network-reachability --save
 app.component.ts
 
 ```ts
-import { IonicNetworkReachability } from 'ionic-network-reachability';
+import { IonicNetworkReachability } from 'angular-reachability';
 
 export class AppComponent {
 
