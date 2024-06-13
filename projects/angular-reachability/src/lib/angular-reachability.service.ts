@@ -16,7 +16,7 @@ export class AngularReachabilityService {
    */
   public async isReachable(url: string = 'https://httpbin.org/') {
     try {
-      const result = await fetch(url);
+      const result = await fetch(url, {cache:'no-cache'});
       if (result.ok) {
         return true;
       } else {
@@ -62,7 +62,7 @@ export class AngularReachabilityService {
   }
 
   private httpReq(url: string) {
-    return from(fetch(url));
+    return from(fetch(url, {cache:'no-cache'}));
   }
   /**
    * @description it is used monitor network activity
