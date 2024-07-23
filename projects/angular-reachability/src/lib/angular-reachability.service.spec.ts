@@ -11,6 +11,6 @@ describe('AngularReachabilityService', () => {
   });
 
   it('should be created', async () => {
-    expect(await service.isReachable()).toBeTrue();
+    expect(await service.isReachable('https://httpbin.org/')).toBeTrue();
   });
 });
