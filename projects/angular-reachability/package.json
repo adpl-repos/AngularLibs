@@ -1,9 +1,9 @@
 {
-  "name": "angular-reachability",
-  "version": "0.0.22",
+  "name": "@adplorg/angular-reachability",
+  "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "^17.3.0 || ^18.0.0",
-    "@angular/core": "^17.3.0 || ^18.0.0"
+    "@angular/common": "^19.0.0",
+    "@angular/core": "^19.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
@@ -11,7 +11,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kbala-ami/AngularLibs.git"
+    "url": "git+https://github.com/adpl-repos/AngularLibs.git"
   },
   "keywords": [
     "ionic",
@@ -22,10 +22,10 @@
     "typescript",
     "angular"
   ],
-  "author": "kbala@adaptivemedia.in",
+  "author": "kbala@adaptivedev.in",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kbala-ami/AngularLibs/issues"
+    "url": "https://github.com/adpl-repos/AngularLibs/issues"
   },
-  "homepage": "https://github.com/kbala-ami/AngularLibs/blob/main/projects/angular-reachability/README.md"
+  "homepage": "https://github.com/adpl-repos/AngularLibs/blob/main/projects/angular-reachability/README.md"
 }
